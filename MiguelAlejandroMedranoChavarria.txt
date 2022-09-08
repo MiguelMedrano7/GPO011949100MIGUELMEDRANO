@@ -1,0 +1,106 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <conio.h>
+#include <cstring>
+
+using namespace std;
+int main()
+{
+	int Preciouni, Total, opcion;
+	float Impuesto = 1.16;
+	string numart, NombVid, Lan, Clas, Cara, Des, Gen;
+
+	cout << "\t ***Chatows Games*** \n";
+	cout << "1.-Agregar Articulo \n2-. Modificar articulo \n3-. Eliminar Articulo \n4-. Lista de articulos vigentes \n5-. Limpiar pantalla \n6-. Salir\n";
+
+	cin >> opcion;
+
+	switch (opcion)
+	{
+	case 1:
+
+		cout << "Ingresar numero de Art\n";
+		cin >> numart;
+		cout << "Ingresar nombre de Videojuego\n";
+		cin.ignore();
+		getline(cin, NombVid);
+
+		cout << "Ingresar fecha de Lanzamiento\n";
+		cin.ignore();
+		getline(cin, Lan);
+		cout << "Ingresar clasificacion\n";
+		cin.ignore();
+		getline(cin, Clas);
+		cout << "Ingresar caracteristicas\n";
+		cin.ignore();
+		getline(cin, Cara);
+		cout << "Ingresar descripcion\n";
+		cin.ignore();
+		getline(cin, Des);
+		cout << "Ingresar genero\n";
+		cin.ignore();
+		getline(cin, Gen);
+		cout << "Ingesar precio\n";
+		cin >> Preciouni;
+		cout << "Impuesto del 16 porciento de IVA\n";
+
+		Total = Impuesto * Preciouni;
+
+		cout << "Precio total es de:" << Total << endl;
+
+		system("pause");
+		return main();
+
+		break;
+
+	case 2:
+		system("cls");
+		cout << "Elegir art a modificar\n";
+		system("pause");
+		return main();
+
+		break;
+
+	case 3:
+		system("cls");
+		cout << "Elegir Art. que quiere que sea eliminado\n";
+		system("pause");
+		return main();
+
+		break;
+
+	case 4:
+		system("cls");
+		cout << "Escoga de lista lo deseado\n";
+		system("pause");
+		return main();
+
+		break;
+
+	case 5:
+		system("cls");
+		cout << "Limpieza Completada\n";
+		system("pause");
+		return main();
+
+		break;
+
+	case 6:
+		system("cls");
+		cout << "Gracias por visitarnos\n";
+		system("pause");
+
+		break;
+
+	default:
+		system("cls");
+		cout << "Opcion no valida\n";
+		system("pause");
+		return main();
+
+		break;
+
+	}
+
+}
